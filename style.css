@@ -1,0 +1,783 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+    background: rgba(17, 25, 40, 1);
+    font-family: Inter, serif;
+    --primary500: rgba(63, 131, 248, 1);
+    --primary600: rgba(28, 100, 242, 1);
+    --primary700: rgba(26, 86, 219, 1);
+    --gray400: rgba(156, 163, 175, 1);
+    --gray500: rgba(107, 114, 128, 1);
+    --gray600: rgba(75, 85, 99, 1);
+    --gray700: rgba(55, 65, 81, 1);
+    --gray800: rgba(31, 42, 55, 1);
+}
+nav {
+    color: white;
+    padding: 24px 70px 0 70px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+}
+.navbar h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.login {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.loginHighlight {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.threeLine {
+    display: none;
+}
+.getStartedHighlight {
+    background: var(--primary700);
+    width: 117px;
+    height: 41px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero {
+    padding: 96px 70px 96px 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+}
+.content {
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.margin {
+    margin: 0px;
+}
+.img {
+    width: 576px;
+}
+.content p {
+    color: var(--gray400);
+    font-size: 20px;
+}
+.content h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+}
+.buttonsHighlight {
+    text-decoration: none;
+    width: 182px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.buttonBlue {
+    color: white;
+   background-color: var(--primary700);
+}
+.buttonBlack {
+    background-color: var(--gray800);
+    color: var(--gray400);
+    border: var(--gray600) 1px solid;
+}
+.buttonBlack img {
+    padding-right: 7px;
+}
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+    border-top: 1px solid var(--gray700) ;
+}
+.sponsorsHighlight {
+    padding: 0 0 96px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponsors p {
+    color: var(--gray500);
+    font-size: 16px;
+    font-weight: 500;
+}
+.socialProof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px 96px 70px;
+}
+.socialProofBox {
+    color: white;
+    padding: 0 0 96px 0;
+    border: 1px solid var(--gray700);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+    height: 117px;
+    padding: 24px 16px 24px 16px;
+    background-color: var(--gray800);
+}
+.socialProofBoxText {
+    width: 248px;
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border-right: 1px solid var(--gray700);
+}
+.socialProofBoxText h2 {
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.socialProofBoxText p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+}
+.CTA {
+    color: white;
+    padding: 0 70px 96px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    flex-direction: column;
+}
+.CTAContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.CTAContentText {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.CTAContentText h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+.CTAContentText p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray400);
+}
+.CTAContentButtons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.CTAContentButtonsA {
+    background-color: var(--primary700);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.CTAContentButtonsA img {
+    padding-left: 7px;
+}
+.CTAContentButtonsB {
+    background-color: var(--gray800);
+    border: 1px solid var(--gray600);
+    border-radius: 8px;
+    color: var(--gray400);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.CustomerLogos {
+    color: white;
+    background-color: var(--gray800);
+    padding: 96px 0;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    align-items: center;
+}
+.CustomerLogosText {
+    width: 672px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.CustomerLogosText h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0px;
+}
+.CustomerLogosText p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--gray400);
+    margin: 0px;
+}
+.CustomerLogosText a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary500);
+    text-decoration: none;
+}
+.CustomerLogosIMG {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    flex-grow: 1;
+}
+.CustomerLogosIMGContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.CustomerLogosIMGContent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray500);
+    margin: 0px;
+}
+.CustomerLogosIMGContent a {
+    border: 1px solid var(--gray600);
+    border-radius: 8px;
+    color: var(--gray400);
+    width: 122px;
+    text-decoration: none;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+}
+.CTAtwo {
+    color: white;
+    padding: 96px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.CTAtwoText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 676px;
+    text-align: center;
+}
+.CTAtwoText h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0px;
+}
+.CTAtwoText p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.CTAtwoDonate {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: space-between;
+}
+.CTAtwoDonateContent {
+    padding: 32px;
+    background-color: var(--gray800);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    border: 1px solid var(--gray800);
+    border-radius: 8px;
+}
+.CTAProgressBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.CTAProgressBar b {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.CTAtwoDonateContent h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+}
+.CTAtwoDonateContent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.CTAtwoDonateButtons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.CTAtwoDonateButtonA {
+    background-color: var(--primary600);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.CTAtwoDonateButtonB {
+        border: 1px solid var(--gray600);
+        border-radius: 8px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--gray400);
+        font-size: 14px;
+        font-weight: 500;
+        justify-content: center;
+}
+.CTAtwoDonateButtons img {
+    padding-right: 7px;
+}
+.CTAtwoHighlight {
+    text-decoration: none;
+    color: var(--primary500);
+    font-size: 18px;
+    font-weight: 400;
+}
+.CTAtwoHighlight img {
+    padding-left: 7px;
+}
+.CTAtwoDonateContent progress {
+    width: 100%;
+}
+.blog {
+    color: white;
+    padding: 96px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray800);
+    gap: 64px;
+}
+.blogText {
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.blogText h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+.blogText p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.blogBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+}
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.blogContentMid {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--gray700);
+    border-right: 1px solid var(--gray700);
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.blogContentText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.blogContentText h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+}
+.blogContentText p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.blogContentText a {
+    text-decoration: none;
+    color: var(--primary500);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+.blogContentText a img {
+    padding-left: 7px;
+}
+.Contact {
+    padding: 96px 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+.ContactText {
+    text-align: center;
+    width: 672px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.ContactText h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0px;
+}
+.ContactText p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray400);
+    margin: 0px;
+}
+.Contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 640px;
+}
+.Contact form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.Contact form textarea {
+    width: 640px;
+    height: 162px;
+    border: 1px solid var(--gray600);
+    background-color: var(--gray700);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+}
+.Contact form input {
+    width: 640px;
+    height: 52px;
+    padding: 14px 16px;
+    border: 1px solid var(--gray600);
+    background-color: var(--gray700);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+}
+.Contact form input::placeholder {
+    color: var(--gray400);
+}
+.Contact form a {
+    border: 1px solid var(--primary600);
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: var(--primary600);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer {
+    padding: 96px 70px 64px 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray800);
+    gap: 64px;
+}
+footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray400);
+}
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+}
+.footerText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footerText h4 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footerText a {
+    text-decoration: none;
+    color: var(--gray400);
+    font-size: 16px;
+    font-weight: 400;
+}
+.footerText p {
+    margin: 0px;
+}
+.socialLinks {
+    text-align: center;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .links {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+    .threeLine {
+        display: flex;
+    }
+    nav {
+        padding: 24px 16px 0px 16px;
+        width: 100%;
+    }
+    .hero {
+        padding: 32px 16px 32px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        gap: 16px;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .content p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .buttonsHighlight {
+        width: 100%;
+    }
+    .sponsors {
+        border: 0px;
+        padding: 0px;
+    }
+    .sponsorsHighlight {
+        padding: 0px;
+    }
+    .sponsorsHighlight img {
+        min-width: 70px;
+    }
+    .sponsors p {
+        display: none;
+    }
+    .img {
+        width: 100%;
+    }
+    .img img {
+        width: 100%;
+    }
+    .socialProof {
+        width: 100%;
+        padding: 0px 16px 32px 16px;
+    }
+    .socialProofBox {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 16px;
+    }
+    .socialProofBoxText {
+        width: 100%;
+        border: 0px;
+    }
+    .CTA {
+        width: 100%;
+        padding: 0px 16px 32px 16px;
+        gap: 32px;
+    }
+    .CTAContent {
+        width: 100%;
+        gap: 24px;
+    }
+    .CTAContent img {
+        display: none;
+    }
+    .CTAContentText h1 {
+        font-size: 30px;
+    }
+    .CustomerLogos {
+        width: 100%;
+        padding: 32px 16px 32px 16px;
+        gap: 32px;
+    }
+    .CustomerLogosText {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    .CustomerLogosIMG {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .CTAtwo {
+        width: 100%;
+        padding: 32px 16px 32px 16px;
+        gap: 16px;
+    }
+    .CTAtwoText {
+        width: 100%;
+    }
+    .CTAtwoDonate {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+    .CTAtwoDonateContent {
+        padding: 20px;
+    }
+    .CTAtwoDonateContent p {
+        font-size: 14px;
+    }
+    .CTAtwoDonateContent p b {
+        font-size: 18px;
+    }
+    .CTAtwoDonateButtons {
+        flex-direction: column;
+        padding: 0px 20px 0 20px;
+        margin: 0px;
+    }
+    .CTAtwoDonateButtonA {
+        width: 100%;
+    }
+    .CTAtwoDonateButtonB {
+        width: 100%;
+    }
+    .blog {
+        padding: 32px 16px 32px 16px;
+        width: 100%;
+        gap: 10px;
+    }
+    .blogText {
+        width: 100%;
+    }
+    .blogBox {
+        flex-direction: column;
+    }
+    .blogContentText {
+        width: 100%;
+    }
+    .hidden {
+        display: none;
+    }
+    .blogContentMid {
+        border: 0px;
+        padding: 0px;
+    }
+    .Contact {
+        padding: 32px 16px 32px 16px;
+        width: 100%;
+        gap: 32px;
+    }
+    .ContactText {
+        width: 100%;
+    }
+    .Contact form {
+        width: 100%;
+    }
+    .Contact form input {
+        width: 100%;
+    }
+    .Contact form textarea {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        padding: 96px 16px 64px 16px;
+    }
+    .footerContent {
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+}
